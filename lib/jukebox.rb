@@ -41,6 +41,7 @@ end
 
 def run(songs)
   help
+  puts "Please enter a command:"
   user_input = gets.strip.downcase
   case user_input
     when "help"
