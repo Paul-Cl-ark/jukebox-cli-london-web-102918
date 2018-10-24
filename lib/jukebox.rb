@@ -38,3 +38,20 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+def run(songs)
+  help
+  user_input = gets.strip.downcase
+  case user_input
+    when "help"
+      help
+    when "list"
+      list
+    when "play"
+      play
+    when "exit" 
+      exit_jukebox
+    else
+      list
+  end
+end
